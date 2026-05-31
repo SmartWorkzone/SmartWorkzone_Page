@@ -23,6 +23,207 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Site navigation */
+.site-nav {
+  background: var(--background-primary);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.site-nav .nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-nav .tabs {
+  margin-bottom: 0;
+}
+
+.site-nav .tabs ul {
+  border-bottom: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.site-nav .tabs li {
+  margin: 0;
+}
+
+.site-nav .tabs a {
+  border-bottom: 3px solid transparent;
+  color: var(--text-secondary);
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  transition: var(--transition);
+}
+
+.site-nav .tabs a:hover {
+  background: var(--background-secondary);
+  border-bottom-color: var(--border-color);
+  color: var(--primary-color);
+}
+
+.site-nav .tabs li.is-active a {
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.page-section {
+  padding: 3rem 1.5rem;
+}
+
+.overview-video {
+  width: 100%;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  margin-top: 2rem;
+}
+
+.people-section-title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1.5rem !important;
+  text-align: center;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.people-card {
+  text-align: center;
+}
+
+.people-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  border: 3px solid #C3982E;
+}
+
+.people-card .name {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.partners-logos img {
+  max-height: 90px;
+  max-width: 260px;
+  object-fit: contain;
+}
+
+.pub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pub-list > li {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pub-list > li:last-child {
+  border-bottom: none;
+}
+
+.pub-list .venue {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.pub-list .venue-type {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.pub-list .entry {
+  margin-left: 1.5rem;
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.pub-list .highlight {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.outreach-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.outreach-list li {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.outreach-list strong {
+  color: var(--text-primary);
+}
+
+.contact-list {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-entry {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-entry:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.contact-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem !important;
+}
+
+.contact-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-list a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
 /* Smooth scrolling for better UX */
 html {
   scroll-behavior: smooth;
@@ -142,7 +343,31 @@ body {
 }
 
 .publication-header .hero-body {
-  padding: 6rem 1.5rem 4rem;
+  padding: 4rem 1.5rem 3rem;
+}
+
+.project-tagline {
+  color: var(--text-secondary);
+  font-weight: 500;
+  max-width: 720px;
+  margin: -1rem auto 1.5rem !important;
+  line-height: 1.5;
+}
+
+.footer-copyright {
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .project-tagline {
+    font-size: 1rem !important;
+  }
 }
 
 .publication-authors {

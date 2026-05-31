@@ -1,0 +1,11 @@
+# Temp extraction folders
+_ppt_extract/
+_docx_extract/
+_*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
+~$*.docx
+.~lock.*
