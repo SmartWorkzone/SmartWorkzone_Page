@@ -188,6 +188,31 @@
   color: var(--text-primary);
 }
 
+.outreach-item {
+  margin-bottom: 2.5rem;
+}
+
+.outreach-item p {
+  margin-bottom: 0.35rem;
+}
+
+.outreach-event {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem !important;
+}
+
+.outreach-item:last-child {
+  margin-bottom: 0;
+}
+
+.outreach-item img {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-top: 1rem;
+  width: 100%;
+}
+
 .contact-list {
   text-align: left;
 }
