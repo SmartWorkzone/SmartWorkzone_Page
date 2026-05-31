@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      if (location.pathname.indexOf('/SmartWorkzone_Page') === 0) {
+        document.write('<base href="/SmartWorkzone_Page/">');
+      }
+    })();
+  </script>
   <meta name="description" content="Integrated Smart Work Zone — contact information.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Integrated Smart Work Zone | Contact</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
 
 <body>
@@ -49,7 +57,7 @@
       <div class="columns is-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3 has-text-centered">Contact</h2>
-          <div class="content contact-list">
+          <div class="content contact-list has-text-justified">
             <div class="contact-entry">
               <p class="contact-name">Dr. Sogand Hasanzadeh</p>
               <p><a href="mailto:sogandm@purdue.edu">sogandm@purdue.edu</a></p>

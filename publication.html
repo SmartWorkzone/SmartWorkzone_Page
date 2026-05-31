@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      if (location.pathname.indexOf('/SmartWorkzone_Page') === 0) {
+        document.write('<base href="/SmartWorkzone_Page/">');
+      }
+    })();
+  </script>
   <meta name="description" content="Integrated Smart Work Zone — publications and conference presentations.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Integrated Smart Work Zone | Publication</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
 
 <body>

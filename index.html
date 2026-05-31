@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function () {
+      if (location.pathname.indexOf('/SmartWorkzone_Page') === 0) {
+        document.write('<base href="/SmartWorkzone_Page/">');
+      }
+    })();
+  </script>
   <meta name="description" content="Integrated Smart Work Zone — Smarter and Safer Workzone Through Multimodal Intrusion Detection.">
   <meta name="keywords" content="Integrated Smart Work Zone, work zone safety, radar, camera, LiDAR, sensing, digital twin, INDOT, USDOT SMART">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Integrated Smart Work Zone | Overview</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
 
 <body>
@@ -60,7 +68,7 @@
           <h2 class="title is-3 has-text-centered">Overview</h2>
 
           <div class="has-text-centered publication-banner">
-            <img src="./static/images/overview-banner.png" alt="Smart Work Zone system overview">
+            <img src="static/images/overview-banner.png" alt="Smart Work Zone system overview">
           </div>
 
           <div class="content has-text-justified publication-body" style="margin-top: 2rem;">
@@ -74,7 +82,7 @@
 
           <div class="has-text-centered">
             <video class="overview-video" controls preload="metadata">
-              <source src="./static/videos/project-video.mp4" type="video/mp4">
+              <source src="static/videos/project-video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
