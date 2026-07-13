@@ -676,6 +676,8 @@ body {
   height: 30px;
   width: auto;
   max-width: 145px;
+  background: #1f1f1f;
+  border-color: #1f1f1f;
 }
 
 .site-footer-bar__logo--indot {
